@@ -8,12 +8,14 @@
     </div>
     
     
-    <div class="row">
+    <div class="row text-center" style="display:flex; flex-wrap: wrap;">
         <% campgrounds.forEach(function(camp){  %>
         <div class="col-md-3 col-sm-6">
             <div class="thumbnail">
-                <h4 class="caption"><%=camp.name%></h4>
                 <image src="<%= camp.image %>"></image>
+                <div class="caption">
+                       <h4 class="caption"><%=camp.name%></h4>
+                </div>
                 <p>
                     <a href="/campgrounds/<%= camp._id %>" class="btn btn-primary">More Info</a>
                 </p>
